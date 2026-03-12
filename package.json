@@ -1,0 +1,27 @@
+{
+  "name": "mi-grua-247",
+  "version": "1.0.0",
+  "description": "PWA profesional para servicio de grúa de plataforma 24/7 en Costa Rica",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "start": "python -m http.server 8080",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "grua",
+    "towing",
+    "emergency",
+    "costa-rica",
+    "pwa",
+    "react"
+  ],
+  "author": "Mi Grúa 24/7",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/mi-grua-247.git"
+  },
+  "devDependencies": {}
+}

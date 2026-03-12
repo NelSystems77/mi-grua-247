@@ -1,0 +1,82 @@
+{
+  "name": "Mi Grúa 24/7 - Servicio de Grúa de Plataforma",
+  "short_name": "Mi Grúa 24/7",
+  "description": "Servicio profesional de grúa de plataforma 24 horas en Costa Rica. Respuesta rápida y transporte seguro.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es-CR",
+  "dir": "ltr",
+  "categories": ["business", "utilities", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Solicitar Grúa",
+      "short_name": "Solicitar",
+      "description": "Solicitud rápida de servicio de grúa",
+      "url": "/#solicitar",
+      "icons": [
+        {
+          "src": "/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "WhatsApp",
+      "short_name": "WhatsApp",
+      "description": "Contacto directo por WhatsApp",
+      "url": "https://wa.me/50687409343",
+      "icons": [
+        {
+          "src": "/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Llamar",
+      "short_name": "Llamar",
+      "description": "Llamar directamente",
+      "url": "tel:+50687409343",
+      "icons": [
+        {
+          "src": "/icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
