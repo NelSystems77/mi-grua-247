@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Mi Grúa 24/7 | Servicio de Grúa de Plataforma en Costa Rica</title>
+  <meta name="title" content="Mi Grúa 24/7 | Servicio de Grúa de Plataforma en Costa Rica">
+  <meta name="description" content="Servicio profesional de grúa de plataforma 24/7 en Costa Rica. Respuesta rápida, transporte seguro. Cobertura en San José y toda el área metropolitana. ☎️ 8740-9343">
+  <meta name="keywords" content="grúa costa rica, grúa plataforma, grúa 24 horas, servicio grúa san josé, grúa emergencia, rescate vehicular, transporte vehicular, grúa rápida, towing service">
+  <meta name="author" content="Mi Grúa 24/7">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Theme and App -->
+  <meta name="theme-color" content="#f59e0b">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Mi Grúa 24/7">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nelsystems77.github.io/mi-grua-247/">
+  <meta property="og:title" content="Mi Grúa 24/7 | Servicio de Grúa de Plataforma">
+  <meta property="og:description" content="Servicio profesional de grúa 24/7 en Costa Rica. Llegamos rápido, transporte seguro. ☎️ 8740-9343">
+  <meta property="og:locale" content="es_CR">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://nelsystems77.github.io/mi-grua-247/">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="./manifest.json">
+  
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mi Grúa 24/7",
+    "description": "Servicio profesional de grúa de plataforma 24 horas en Costa Rica",
+    "url": "https://nelsystems77.github.io/mi-grua-247/",
+    "telephone": "+506-8740-9343",
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San José",
+      "addressCountry": "CR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "150"
+    }
+  }
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    #loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.3s;
+    }
+    
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 5px solid rgba(245, 158, 11, 0.2);
+      border-top-color: #f59e0b;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    .animate-slideUp {
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon-lg {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .icon-sm {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .mobile-menu.active {
+      max-height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">
+    <div class="loader"></div>
+  </div>
+
+  <div class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans">
+    <!-- Decorative Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none opacity-20">
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-amber-500 rounded-full filter blur-3xl animate-pulse"></div>
+      <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl" style="animation-delay: 1s"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full z-50 transition-all duration-300 bg-transparent">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="bg-gradient-to-br from-amber-400 to-amber-600 p-3 rounded-xl shadow-lg">
+              <svg class="icon" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div>
+              <h1 class="text-2xl md:text-3xl font-black tracking-tight bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+                MI GRÚA 24/7
+              </h1>
+              <p class="text-xs text-slate-400 font-semibold">Servicio Rápido y Confiable</p>
+            </div>
+          </div>
+
+          <nav class="hidden md:flex items-center gap-8">
+            <a href="#servicios" class="text-slate-300 hover:text-amber-400 font-semibold transition-colors">Servicios</a>
+            <a href="#cobertura" class="text-slate-300 hover:text-amber-400 font-semibold transition-colors">Cobertura</a>
+            <a href="#contacto" class="text-slate-300 hover:text-amber-400 font-semibold transition-colors">Contacto</a>
+            <a href="tel:+50687409343" class="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-amber-500/50 transition-all">
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>8740-9343</span>
+            </a>
+          </nav>
+
+          <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition-colors">
+            <svg class="icon" id="menuIcon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="mobile-menu md:hidden bg-slate-900/98 backdrop-blur-xl border-t border-slate-800">
+        <nav class="container mx-auto px-4 py-6 flex flex-col gap-4">
+          <a href="#servicios" class="text-slate-300 hover:text-amber-400 font-semibold py-3 border-b border-slate-800">Servicios</a>
+          <a href="#cobertura" class="text-slate-300 hover:text-amber-400 font-semibold py-3 border-b border-slate-800">Cobertura</a>
+          <a href="#contacto" class="text-slate-300 hover:text-amber-400 font-semibold py-3 border-b border-slate-800">Contacto</a>
+          <a href="tel:+50687409343" class="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-4 rounded-full font-bold shadow-lg mt-2">
+            <svg class="icon-sm" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>8740-9343</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32">
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/30 px-6 py-2 rounded-full mb-6">
+            <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span class="text-amber-400 font-bold text-sm">DISPONIBLES LAS 24 HORAS</span>
+          </div>
+          
+          <h2 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
+            Tu Grúa de Plataforma
+            <span class="block bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent mt-2">
+              Llegamos en Minutos
+            </span>
+          </h2>
+          
+          <p class="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+            Servicio profesional de grúa de plataforma en toda el área metropolitana. 
+            <span class="text-amber-400 font-semibold"> Respuesta inmediata, transporte seguro.</span>
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a 
+              href="#solicitar" 
+              class="w-full sm:w-auto flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-amber-500/50 transition-all transform hover:scale-105"
+            >
+              <svg class="icon-sm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span>Solicitar Grúa Ahora</span>
+            </a>
+            
+            <a 
+              href="https://wa.me/50687409343" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-green-500/30 transition-all transform hover:scale-105"
+            >
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>WhatsApp Directo</span>
+            </a>
+          </div>
+
+          <button id="installBtn" style="display: none;" class="mt-6 inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-xl font-semibold text-sm border border-slate-700 transition-all">
+            📱 Instalar App
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-12 border-y border-slate-800 bg-slate-900/50">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div class="flex flex-col items-center text-center p-6 bg-slate-800/50 rounded-2xl hover:bg-slate-800/70 transition-all hover:scale-105">
+            <svg class="icon-lg text-amber-400 mb-3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <h3 class="text-xl font-bold mb-1">24/7</h3>
+            <p class="text-sm text-slate-400">Disponibilidad</p>
+          </div>
+          <div class="flex flex-col items-center text-center p-6 bg-slate-800/50 rounded-2xl hover:bg-slate-800/70 transition-all hover:scale-105">
+            <svg class="icon-lg text-amber-400 mb-3" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <h3 class="text-xl font-bold mb-1">Seguro</h3>
+            <p class="text-sm text-slate-400">y Confiable</p>
+          </div>
+          <div class="flex flex-col items-center text-center p-6 bg-slate-800/50 rounded-2xl hover:bg-slate-800/70 transition-all hover:scale-105">
+            <svg class="icon-lg text-amber-400 mb-3" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <h3 class="text-xl font-bold mb-1">5 Estrellas</h3>
+            <p class="text-sm text-slate-400">Calificación</p>
+          </div>
+          <div class="flex flex-col items-center text-center p-6 bg-slate-800/50 rounded-2xl hover:bg-slate-800/70 transition-all hover:scale-105">
+            <svg class="icon-lg text-amber-400 mb-3" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            <h3 class="text-xl font-bold mb-1">Plataforma</h3>
+            <p class="text-sm text-slate-400">Moderna</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicios" class="py-20 md:py-32">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-black mb-4">
+            Nuestros <span class="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">Servicios</span>
+          </h2>
+          <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+            Soluciones profesionales para cualquier situación de emergencia vehicular
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700 hover:border-amber-500/50 transition-all hover:shadow-2xl hover:shadow-amber-500/20 hover:-translate-y-2">
+            <div class="text-5xl mb-4">🚛</div>
+            <h3 class="text-2xl font-bold mb-3">Grúa de Plataforma</h3>
+            <p class="text-slate-400 mb-6 leading-relaxed">Transporte seguro de su vehículo en plataforma completamente horizontal. Ideal para autos bajos, clásicos o de alta gama.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2 text-sm">
+                <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="text-slate-300">Sin daño al vehículo</span>
+              </li>
+              <li class="flex items-center gap-2 text-sm">
+                <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="text-slate-300">Carga y descarga segura</span>
+              </li>
+              <li class="flex items-center gap-2 text-sm">
+                <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="text-slate-300">Para cualquier tipo de auto</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700 hover:border-amber-500/50 transition-all hover:shadow-2xl hover:shadow-amber-500/20 hover:-translate-y-2">
+            <div class="text-5xl mb-4">⚡</div>
+            <h3 class="text-2xl font-bold mb-3">Rescate 24/7</h3>
+            <p class="text-slate-400 mb-6 leading-relaxed">Servicio de emergencia disponible las 24 horas, los 7 días de la semana. Llegamos rápido donde nos necesite.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2 text-sm">
+                <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="text-slate-300">Respuesta inmediata</span>
+              </li>
+              <li class="flex items-center gap-2 text-sm">
+                <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="text-slate-300">Toda el área metropolitana</span>
+              </li>
+              <li class="flex items-center gap-2 text-sm">
+                <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="text-slate-300">Personal capacitado</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-3xl border border-slate-700 hover:border-amber-500/50 transition-all hover:shadow-2xl hover:shadow-amber-500/20 hover:-translate-y-2">
+            <div class="text-5xl mb-4">🎯</div>
+            <h3 class="text-2xl font-bold mb-3">Traslados Seguros</h3>
+            <p class="text-slate-400 mb-6 leading-relaxed">Transporte confiable a talleres, concesionarios o su destino preferido con el máximo cuidado.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2 text-sm">
+                <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="text-slate-300">Operadores expertos</span>
+              </li>
+              <li class="flex items-center gap-2 text-sm">
+                <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="text-slate-300">Equipo moderno</span>
+              </li>
+              <li class="flex items-center gap-2 text-sm">
+                <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="text-slate-300">Seguro incluido</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage -->
+    <section id="cobertura" class="py-20 md:py-32 bg-slate-900/50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-black mb-4">
+              <span class="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">Cobertura Total</span> Gran Área Metropolitana
+            </h2>
+            <p class="text-xl text-slate-400">
+              Servimos toda la zona de San José y alrededores
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">San José Centro</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Escazú</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Santa Ana</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Heredia</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Alajuela</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Cartago</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Curridabat</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Desamparados</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Moravia</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Guadalupe</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Pavas</span>
+            </div>
+            <div class="flex items-center gap-3 bg-slate-800/50 p-4 rounded-xl hover:bg-slate-800 transition-all hover:translate-x-2">
+              <svg class="icon-sm text-amber-400" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="font-semibold">Tibás</span>
+            </div>
+          </div>
+
+          <div class="mt-12 p-8 bg-gradient-to-br from-amber-500/10 to-amber-600/10 border border-amber-500/30 rounded-3xl text-center">
+            <p class="text-lg text-slate-300 mb-4">
+              <span class="text-amber-400 font-bold">¿Tu zona no aparece?</span> No te preocupes, también servimos zonas aledañas.
+            </p>
+            <a 
+              href="https://wa.me/50687409343?text=Hola,%20necesito%20información%20sobre%20cobertura"
+              class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 px-6 py-3 rounded-xl font-bold transition-all transform hover:scale-105"
+            >
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Consultar Disponibilidad
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Request Form -->
+    <section id="solicitar" class="py-20 md:py-32">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-5xl font-black mb-4">
+              Solicita tu <span class="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">Grúa Ahora</span>
+            </h2>
+            <p class="text-xl text-slate-400">
+              Completa el formulario y te contactaremos de inmediato por WhatsApp
+            </p>
+          </div>
+
+          <form id="contactForm" class="bg-gradient-to-br from-slate-800 to-slate-900 p-8 md:p-12 rounded-3xl border border-slate-700 shadow-2xl">
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label class="block text-sm font-bold mb-2 text-slate-300">
+                  Nombre Completo <span class="text-amber-400">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="nombre"
+                  required
+                  class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-white"
+                  placeholder="Juan Pérez"
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-bold mb-2 text-slate-300">
+                  Teléfono <span class="text-amber-400">*</span>
+                </label>
+                <input
+                  type="tel"
+                  name="telefono"
+                  required
+                  class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-white"
+                  placeholder="8888-8888"
+                />
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-sm font-bold mb-2 text-slate-300">
+                Ubicación Actual <span class="text-amber-400">*</span>
+              </label>
+              <input
+                type="text"
+                name="ubicacion"
+                required
+                class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-white"
+                placeholder="Ej: Frente al Mall San Pedro, 200m norte"
+              />
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-sm font-bold mb-2 text-slate-300">
+                Destino <span class="text-amber-400">*</span>
+              </label>
+              <input
+                type="text"
+                name="destino"
+                required
+                class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-white"
+                placeholder="Ej: Taller Mecánico El Experto, Curridabat"
+              />
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-sm font-bold mb-2 text-slate-300">
+                Tipo de Vehículo <span class="text-amber-400">*</span>
+              </label>
+              <select
+                name="tipoVehiculo"
+                required
+                class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-white cursor-pointer"
+              >
+                <option value="automovil">Automóvil</option>
+                <option value="suv">SUV</option>
+                <option value="pickup">Pickup</option>
+                <option value="moto">Motocicleta</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="mb-8">
+              <label class="block text-sm font-bold mb-2 text-slate-300">
+                Descripción del Problema
+              </label>
+              <textarea
+                name="descripcion"
+                rows="4"
+                class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all text-white resize-none"
+                placeholder="Ej: El motor no enciende, necesito traslado urgente..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-amber-500/50 transition-all transform hover:scale-105"
+            >
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Enviar por WhatsApp</span>
+            </button>
+
+            <p class="text-center text-sm text-slate-400 mt-6">
+              Al enviar, serás redirigido a WhatsApp para confirmar tu solicitud
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 md:py-32 bg-gradient-to-b from-slate-900/50 to-slate-900">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-black mb-4">¿Por Qué Elegirnos?</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all text-center hover:-translate-y-2">
+            <div class="text-5xl mb-4">⚡</div>
+            <h3 class="text-xl font-bold mb-2">Respuesta Rápida</h3>
+            <p class="text-slate-400 text-sm">Llegamos en el menor tiempo posible</p>
+          </div>
+          <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all text-center hover:-translate-y-2">
+            <div class="text-5xl mb-4">🛡️</div>
+            <h3 class="text-xl font-bold mb-2">Servicio Seguro</h3>
+            <p class="text-slate-400 text-sm">Equipo moderno y operadores certificados</p>
+          </div>
+          <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all text-center hover:-translate-y-2">
+            <div class="text-5xl mb-4">💰</div>
+            <h3 class="text-xl font-bold mb-2">Precios Justos</h3>
+            <p class="text-slate-400 text-sm">Tarifas transparentes sin sorpresas</p>
+          </div>
+          <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-all text-center hover:-translate-y-2">
+            <div class="text-5xl mb-4">📞</div>
+            <h3 class="text-xl font-bold mb-2">Atención 24/7</h3>
+            <p class="text-slate-400 text-sm">Siempre disponibles cuando nos necesites</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="contacto" class="py-20 bg-slate-950">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-5xl font-black mb-6">
+            ¿Necesitas una <span class="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">Grúa Ahora?</span>
+          </h2>
+          <p class="text-xl text-slate-400 mb-10">
+            Contactanos de inmediato. Estamos listos para ayudarte.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <a 
+              href="tel:+50687409343"
+              class="flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-amber-500/50 transition-all transform hover:scale-105"
+            >
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+506 8740-9343</span>
+            </a>
+            
+            <a 
+              href="https://wa.me/50687409343"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-green-500/30 transition-all transform hover:scale-105"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="border-t border-slate-800 pt-8">
+            <div class="flex items-center justify-center gap-3 mb-4">
+              <div class="bg-gradient-to-br from-amber-400 to-amber-600 p-2 rounded-lg">
+                <svg class="icon" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </div>
+              <span class="text-xl font-black">MI GRÚA 24/7</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">
+              Servicio Profesional de Grúa de Plataforma en Costa Rica
+            </p>
+            <p class="text-slate-500 text-xs">
+              © 2024 Mi Grúa 24/7. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Hide loading screen
+    setTimeout(() => {
+      const loading = document.getElementById('loading');
+      if (loading) {
+        loading.style.opacity = '0';
+        setTimeout(() => loading.style.display = 'none', 300);
+      }
+    }, 500);
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.className = 'fixed w-full z-50 transition-all duration-300 bg-slate-900/95 backdrop-blur-lg shadow-2xl';
+      } else {
+        header.className = 'fixed w-full z-50 transition-all duration-300 bg-transparent';
+      }
+    });
+
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      
+      if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        icon.innerHTML = '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
+      } else {
+        menu.classList.add('active');
+        icon.innerHTML = '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>';
+      }
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobileMenu').classList.remove('active');
+        document.getElementById('menuIcon').innerHTML = '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
+      });
+    });
+
+    // PWA Install
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      document.getElementById('installBtn').style.display = 'inline-flex';
+    });
+
+    document.getElementById('installBtn').addEventListener('click', () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(() => {
+          deferredPrompt = null;
+          document.getElementById('installBtn').style.display = 'none';
+        });
+      }
+    });
+
+    // Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js')
+        .then(() => console.log('Service Worker registered'))
+        .catch(() => {});
+    }
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData);
+      
+      const mensaje = `*SOLICITUD DE SERVICIO - MI GRÚA 24/7*%0A%0A` +
+        `👤 *Nombre:* ${data.nombre}%0A` +
+        `📱 *Teléfono:* ${data.telefono}%0A` +
+        `📍 *Ubicación Actual:* ${data.ubicacion}%0A` +
+        `🎯 *Destino:* ${data.destino}%0A` +
+        `🚗 *Tipo de Vehículo:* ${data.tipoVehiculo}%0A` +
+        `📝 *Descripción:* ${data.descripcion}%0A%0A` +
+        `⚡ *Solicitud Urgente*`;
+
+      const whatsappURL = `https://wa.me/50687409343?text=${mensaje}`;
+      window.open(whatsappURL, '_blank');
+    });
+  </script>
+</body>
+</html>
